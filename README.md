@@ -21,7 +21,7 @@ After doing some more research, we realized that the number of teams have change
 
 
 We decided to look into the difference in number of wins between starters (pitchers who start the game in the first inning) and relievers (pitchers who substitute in for the starter). 
-
+![unnamed](https://github.com/iljones00/pitching/assets/46659382/4546ac8b-4eff-48ca-9914-e09b8d8fa98e)
 What this shows us is that the number of wins is only really applicable to starters, due to the above criteria to be awarded a ‘win’ in a game. Relievers on the other hand have their own metric called ‘saves’.
 We also wanted to examine how the introduction of the relievers classification would impact the total number of wins in a given season:
  
