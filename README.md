@@ -39,21 +39,27 @@ First, before any models were the feature engineering steps. All features had N/
 
 We decided to test this over 4 different models and compare the scores to see which one would perform best. The models we chose were Logistic Regression, Random Forest, Boosted Tree and K-Nearest Neighbors. We chose these models for their aptitude at solving two class classification problems. Each model had a sample size as mentioned above of 48,399 and each used the scoring metric of balanced_accuracy. At first we used accuracy but realized that it was unsuited for a problem with a really unbalanced target feature. Balanced accuracy takes the average of recall on both classes of the target feature so was much better suited for our use case and doesn’t check one class like recall.
 For each model except KNN, we also looked at the feature importance of each model to conduct our analysis. This is essential for our project because we really want to see what statistics are being evaluated as important by these models to have insight on how pitchers perform data. Each model's parameters were tuned using Grid Search.
+
+
 Model 1: Logistic Regression
 Parameters (Grid Search): {'l1_ratio': 0.5, 'penalty': 'none'}
 Performance on test set: 0.6808125696013754
 Feature Importance: Note that in this graph specifically, negative values indicate importance towards predicting the negative category and positive values indicate predicting the positive category, “Yes”.
+
+
 Model 2: Random Forest
 Parameters (Grid Search): {'min_samples_split': 6, 'n_estimators': 50}
 Performance on test set: 0.6817759991664116
 Feature Importance:
+
 Model 3: Boosted Tree
 Parameters (Grid Search): {'learning_rate': 0.4,
  'max_depth': 5,
  'min_samples_split': 2,
  'n_estimators': 50}
 Performance on test set: 0.6886600229236811
-Feature Importance: 
+
+
 Model 4: KNN
 Parameters (Grid Search): {'n_neighbors': 4, 'weights': 'distance'}
 Performance on test set: 0.6913569744648428
